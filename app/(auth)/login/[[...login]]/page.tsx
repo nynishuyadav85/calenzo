@@ -1,4 +1,5 @@
 import { SignIn } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 import Image from "next/image";
 
 export default function LoginPage() {
@@ -11,7 +12,7 @@ export default function LoginPage() {
                 height={100}
             />
             <div className="mt-3">
-                <SignIn />
+                <SignIn appearance={{ baseTheme: dark }} />
             </div>
         </main>
     )

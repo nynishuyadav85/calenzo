@@ -1,4 +1,5 @@
 import { SignUp } from "@clerk/nextjs";
+import { shadesOfPurple } from "@clerk/themes";
 import Image from "next/image";
 
 export default function Register() {
@@ -11,7 +12,7 @@ export default function Register() {
                 height={100}
             />
             <div className="mt-3">
-                <SignUp />
+                <SignUp appearance={{ baseTheme: shadesOfPurple }} />
             </div>
         </main>
     )
