@@ -12,6 +12,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Button } from "../ui/button";
 import { useTransition } from "react";
 import Link from "next/link";
+import router from "next/router";
 
 // component to handle editing/deleting and creating a event
 export default function EventForm({
@@ -33,6 +34,10 @@ export default function EventForm({
             isActive: true, durationInMinutes: 30, description: '', name: ''
         }
     })
+    function deleteEvent(id: string) {
+        throw new Error("Function not implemented.");
+    }
+
     return (
         <Form {...form}>
             <form
